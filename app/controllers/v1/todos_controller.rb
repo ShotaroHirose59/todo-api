@@ -18,6 +18,6 @@ class V1::TodosController < ApplicationController
   private
 
   def todo_params
-    params.reqiure(:todo).permit(:title, :user_id)
+    params.require(:todo).permit(:title, :user_id)
   end
 end
